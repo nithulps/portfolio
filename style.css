@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+.container h1 {
+    color: white;
+}
+
+.container {
+    padding: 10px 10%;
+    height: 500px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    justify-content: space-between;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+    font-size: 30px;
+}
+.txt1 h6{
+  font-size: small;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: blue;
+}
+
+/* about */
+
+#about {
+    padding: 80px 0;
+    color: white;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15%;
+    background-color: #13121234;
+}
+.about-col-1 img:hover{
+    background-color: #ff004f;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+.cn{
+    color: #ffffffc1;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 40px;
+}
+
+
+
+.tab-contents ul li {
+    color: #ffffffba;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: red;
+    font-size: 14px;
+
+}
+
+/* services */
+
+.con1 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#box {
+    border-radius: 15px;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(33, 32, 32);
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+}
+#box h1{   
+    text-align: center;
+}
+
+#box li {
+    color: #ffffffb9;
+    padding: 20px;
+}#box:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+    background-color: #ff004f;
+}
+
+/* works */
+
+.works{
+    margin-top: 20px;
+    display: flex;
+    
+    justify-content:space-between;
+    
+
+}
+.box1{
+    margin-left: 20px;
+    width: 400px;
+    height: 333px;
+    background-color: rgb(255, 255, 255);
+}.box1 img{
+    width: 400px;
+    height: auto;
+}
+.box1 img:hover{
+    transition: 0.5s;
+    background-color:#ff004f;
+}
+.con3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin-top: 30px;
+    width: 70px;
+    height: 30px;
+    border: 2px inset #ff004f;
+    background-color: black;
+    color: white;
+}
+/* contact */
+
+.con4{
+    display: flex;
+    width: 1000;
+    justify-content: space-between;
+}
+.con4 .b1 h1{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.b1{
+    width: auto;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.b1 li i{
+    color: #ff004f;
+    margin-right:  10px;
+}
+.social{
+    display: flex;
+}
+.social i{
+    justify-content: space-around;
+    margin: 10px;
+
+}
+form{
+    background-color: rgba(0, 0, 0, 0.13);
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#form{
+    background-color: rgba(36, 35, 35, 0.235);
+    height: 30px;
+}
+textarea{
+    background-color: rgba(36, 35, 35, 0.235);
+    height: 200px;
+}
+.b1 button{
+    width: 100px;
+    height: 50px;
+    background-color: #ff004f;
+}
